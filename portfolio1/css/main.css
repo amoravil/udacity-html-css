@@ -1,0 +1,148 @@
+/*TEMPORAL: Esta linea la uso para poner un borde rojo en todas las cajas*/
+*{
+	border: 1px solid red;
+}
+
+
+/*Estas lineas es para que el tamaño de la caja incluya no solo 
+el contenido, sino tambien el padding y el border. 
+La última deberia funcionar para todos. Pero por compatibilidad
+estan las otras*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* contain all your others divs. The purpose of it is to limit the max-width of the page
+and center content in case the user is looking at the page on a very large screen. 
+Centering is done by defining "margin:0 auto; (auto margin horizontal)*/
+.grid {
+	margin:0 auto;
+	max-width: 1200px;
+	width:100%;
+}
+
+/*include suport a flexbox Layout (flexible Box) to allow to align 
+and distribute container's children automatically, even when their 
+size is unknown or dynamic.
+flex-wrap property specifies whether flex items are forced into a 
+single line or can be wrapped onto multiple lines. If wrapping is 
+allowed, this property also enables you to control the direction 
+in which lines are stacked.*/
+.row {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+
+}
+
+/*Definition of framework to work with column with different width. 
+it is possible up to 12 columns.*/
+/*I used padding to add negative space*/
+.col-1 {
+	width: 8.33%;
+	padding: 10px;	
+} 
+.col-2 {
+	width: 16.66%;
+	padding: 10px;	
+}
+.col-3 {
+	width: 25%;
+	padding: 10px;	
+
+}
+.col-4 {
+	width: 33.33%;
+	padding: 10px;	
+}
+.col-5 {
+	width: 41.66%;
+	padding: 10px;	
+} 
+.col-6 {
+	width: 50%;
+	padding: 10px;	
+}
+.col-7 {
+	width: 58.33%;
+	padding: 10px;	
+}
+.col-8 {
+	width: 66.66%;
+	padding: 10px;	
+}
+.col-9 {
+	width: 75%;
+	padding: 10px;	
+} 
+.col-10 {
+	width: 83.33%;
+	padding: 10px;	
+}
+.col-11 {
+	width: 91.66%;
+	padding: 10px;	
+}
+.col-12 {
+	width: 100%;
+	padding: 10px;	
+}
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+.title-align {
+	text-align: right;
+}
+
+.text-work-align {
+	text-align: center;
+}
+
+/*this allow to control the scroll in a text. I'm no using in this page 
+but I'll do in the future*/ 
+.reading-area{
+	overflow: auto;
+}
+
+/*Media Querie (@media): Responsive design. Change CSS depending on device, 
+screen size and color.
+*/
+@media only screen and (max-width: 300px) {
+	p{
+		background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 500px) and (orientation:landscape) {
+	p{
+		display:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
