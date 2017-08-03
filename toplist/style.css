@@ -1,0 +1,45 @@
+
+/*Esta linea la uso para poner un borde rojo en todas las cajas*/
+* {
+	outline: 1px solid red !important;
+}
+
+/*Estas lineas es para que el tamaño de la caja incluya no solo 
+el contenido, sino tambien el padding y el border. 
+La última deberia funcionar para todos. Pero por compatibilidad
+estan las otras*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+/*include suport a flexbox Layout (flexible Box) to allow to align 
+and distribute container's children automatically, even when their size is unknown or dynamic.
+it's supports in chrome 29+, IE11+ and Mozilla 28+. to Saffari, 
+I use -webkit- line */
+.app{
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+}
+.title{
+    background-color: #33BEBE;
+	color: white;
+	font-size: 48px;	
+    font-family: Arial;
+	text-align: center;
+	padding: 20px;
+}
+.description {
+	color: #7C8B88;
+	font-family: Arial;
+	font-size: 24px;
+	max-width: 705px;
+	margin: 20px;
+}
+/*img se agrega para que no quede el texto sobre la imagen. asi la imagen toma 
+tambien el maximo del estilo .screenshot*/
+.screenshot img {
+	max-width: 100%;
+}
