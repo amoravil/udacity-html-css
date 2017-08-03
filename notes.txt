@@ -1,0 +1,207 @@
+_________________________________
+My projects:
+_________________________________
+
+* Primero proyecto: Primeros ejercicios están en: C:\andrea\portfolio\portfolio1. Tiene mi propio framework y usé fuentes de google, normalicé la plantilla de css en todos los browsers. No usé nada adicional para ser responsive y cambiar de acuerdo al dispositivo. Quedará pendiente ;)
+
+* Proyecto final: C:\andrea\portfolio\portfolio2  test2.html contiene el ejercicio. Usa bootstrap y es responsive. Usa fuentes de google. Esta customize los css de bootstrap con solo lo que se necesita para este proyecto.
+
+* Otros: framework and toplist tienen algunas notas personales que me sirven durante el proceso de aprendizaje. Creo que estan contenidas y depuradas en los dos proyectos anteriores.
+
+_________________________________
+Additional Reading
+_________________________________
+
+* Article on CSS selectors (http://css-tricks.com/how-css-selectors-work/)
+* Article on flexbox (http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* Mozilla Developer Resources:
+	* HTML Element Reference (https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+	* HTML Attribute Reference (https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+	* CSS Reference (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+_________________________________
+Notes
+_________________________________
+
+
+Code, test, refine.
+1. look for natural boxes.
+2. look for repeated styles and semantic elements.
+3. write your html
+4. apply styles
+5. fix things
+_________________________________
+CSS
+_________________________________
+
+<div class="nombredemielemento">texto</div>
+en css = .nombredemielemento
+
+* Very nice article  (http://css-tricks.com/how-css-selectors-work/)on CSS selectors.
+
+* Documentation (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+Browsers use default stylesheets to determine how to display HTML elements. You can view the default style rules for h1 and other elements for the following browsers:
+	* WebKit (Chrome and Safari) (http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+	* Firefox (http://hg.mozilla.org/mozilla-central/file/tip/layout/style/html.css)
+	* Internet Explorer (http://www.iecss.com/)
+
+Because these rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as 
+
+**** normalize.css (http://necolas.github.io/normalize.css/).
+
+_________________________________
+
+* Box model: margin, border, padding and content.
+	size of an element = border, padding and content.
+
+
+/*Estas lineas es para que el tamaño de la caja incluya no solo 
+el contenido, sino tambien el padding y el border. 
+La última deberia funcionar para todos. Pero por compatibilidad
+estan las otras*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+_________________________________
+
+/*include suport a flexbox Layout (flexible Box) to allow to align 
+and distribute container's children automatically, even when their size is unknown or dynamic.
+it's supports in chrome 29+, IE11+ and Mozilla 28+. to Saffari, 
+I use -webkit- line */
+.app{
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+}
+
+adding the CSS rule display: flex to element.style, which applies the CSS to the selected div element temporarily.
+
+_________________________________
+
+Element.style{} => usarlo para aplicar un estilo a un elemento especifico en las herramientas de desarrollo de chrome. 
+_________________________________
+
+
+_________________________________
+
+Verifying HTML and CSS
+_________________________________
+
+To verify HTML: http://validator.w3.org/#validate_by_input
+To verify CSS: http://jigsaw.w3.org/css-validator/#validate_by_input
+
+_________________________________
+Flex
+_________________________________
+
+Desktop: 1920 px; 1940 px;
+Laptop: Almost the same resolution as desktop.
+Tablet: Resolution is similar to a small laptop. Two orientations. Thumbs.
+Smartphone: Hundreds of pixels wide. Two orientations. Thumbs.
+previously: 1024px; 1200px;
+max-width: 960px; tamaño común.
+
+_________________________________
+
+frameworks: normally use 12 columns;
+.row of 100% page width
+columns of 1/12 - 12/12 page width (more flexibility)
+1/12 (col-1) = 8.33%, 2/12 = 16,66% (col-2) ... 12/12 (col-12) = 100%
+
+_________________________________
+
+Flex documentation:
+Flex: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+Flex-wrap: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+Another guide on flex: http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+/*include suport a flexbox Layout (flexible Box) to allow to align 
+and distribute container's children automatically, even when their 
+size is unknown or dynamic.
+flex-wrap property specifies whether flex items are forced into a 
+single line or can be wrapped onto multiple lines. If wrapping is 
+allowed, this property also enables you to control the direction 
+in which lines are stacked.*/
+Ejemplo: 
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+_________________________________
+
+negative space: space that not containt anything.
+responsiveness and adaptive design;
+
+
+_________________________________
+
+Media Querie (@media)
+_________________________________
+
+Responsive design. Change CSS depending on device, screen size and color.
+
+If your browser width doesn't go below 400px wide, you can test the view in chrome's device emulator as described here:
+https://developer.chrome.com/devtools/docs/device-mode
+
+/*Media Querie (@media): Responsive design. Change CSS depending on device, 
+screen size and color.
+*/
+@media only screen and (max-width: 300px) {
+	p{
+		background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 500px) and (orientation:landscape) {
+	p{
+		display:none;
+	}
+}
+
+_________________________________
+normalize.css
+_________________________________
+
+To normalize css in all browser. Include next css in the head as a link <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+
+Imagenes de prueba antes de tener las definitivas.
+Placehold.it > deja ver las dimensiones de la imagen
+Placekitten.com
+
+Fuentes: www.google.com/fonts (http://www.google.com/fonts) > fonts on Internet. Y agregar el link  a la fuente en el head de la pagina.
+
+
+_________________________________
+Bootstrap
+_________________________________
+
+Video: Choosing A Framework
+Bootstrap: http://getbootstrap.com/ 
+Foundation: http://foundation.zurb.com/ 
+Yaml: http://www.yaml.de/ 
+960 Grid: http://960.gs/ 
+Suzy: http://susy.oddbird.net/ 
+Frameless: http://framelessgrid.com/ (Unfortunately, it looks like Frameless is gone)
+
+_________________________________
+
+To use the Bootstrap files in your project just copy the css and js folders to your project folder. Don't forget to include the files in your head element:
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <script src="js/bootstrap.min.js"></script>
+
+_________________________________
+NOTE: CSS minification 
+_________________________________
+
+does not happen automatically by default, therefore if you edit your unminified CSS file, but include the minified version in your HTML, the page will not use the updated CSS by default.
+
+You can manually minify your CSS using a site like http://cssminifier.com/.
+
+You can also use a more advanced and automated workflow where CSS files get minimized automatically, for example using a plugin for your code editor or a build system like Gruntjs (http://gruntjs.com/).
