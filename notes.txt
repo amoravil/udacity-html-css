@@ -2,11 +2,20 @@ _________________________________
 My projects:
 _________________________________
 
-* Primero proyecto: Primeros ejercicios están en: C:\andrea\portfolio\portfolio1. Tiene mi propio framework y usé fuentes de google, normalicé la plantilla de css en todos los browsers. No usé nada adicional para ser responsive y cambiar de acuerdo al dispositivo. Quedará pendiente ;)
+* Primero proyecto: Primeros ejercicios están en: C:\andrea\portfolio\portfolio1. 
+Tiene mi propio framework y usé fuentes de google, 
+normalicé la plantilla de css en todos los browsers. 
+No usé nada adicional para ser responsive y cambiar de acuerdo al dispositivo. 
+Quedará pendiente ;)
 
-* Proyecto final: C:\andrea\portfolio\portfolio2  test2.html contiene el ejercicio. Usa bootstrap y es responsive. Usa fuentes de google. Esta customize los css de bootstrap con solo lo que se necesita para este proyecto.
+* Proyecto final: C:\andrea\portfolio\portfolio2  
+test2.html contiene el ejercicio. Usa bootstrap y es responsive. 
+Usa fuentes de google. 
+Esta customize los css de bootstrap con solo lo que se necesita para este proyecto.
 
-* Otros: framework and toplist tienen algunas notas personales que me sirven durante el proceso de aprendizaje. Creo que estan contenidas y depuradas en los dos proyectos anteriores.
+* Otros: framework and toplist tienen algunas notas personales 
+que me sirven durante el proceso de aprendizaje. 
+Creo que estan contenidas y depuradas en los dos proyectos anteriores.
 
 _________________________________
 Additional Reading
@@ -40,12 +49,15 @@ en css = .nombredemielemento
 * Very nice article  (http://css-tricks.com/how-css-selectors-work/)on CSS selectors.
 
 * Documentation (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-Browsers use default stylesheets to determine how to display HTML elements. You can view the default style rules for h1 and other elements for the following browsers:
+Browsers use default stylesheets to determine how to display HTML elements. 
+You can view the default style rules for h1 and other elements for the following browsers:
 	* WebKit (Chrome and Safari) (http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
 	* Firefox (http://hg.mozilla.org/mozilla-central/file/tip/layout/style/html.css)
 	* Internet Explorer (http://www.iecss.com/)
 
-Because these rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as 
+Because these rules differ sometimes between browsers, there are 
+efforts to promote consistency in styles across browsers. 
+One popular solution to this issue is using what is referred to as a CSS reset such as 
 
 **** normalize.css (http://necolas.github.io/normalize.css/).
 
@@ -78,11 +90,13 @@ I use -webkit- line */
 	height: 100%;
 }
 
-adding the CSS rule display: flex to element.style, which applies the CSS to the selected div element temporarily.
+adding the CSS rule display: flex to element.style, 
+which applies the CSS to the selected div element temporarily.
 
 _________________________________
 
-Element.style{} => usarlo para aplicar un estilo a un elemento especifico en las herramientas de desarrollo de chrome. 
+Element.style{} => usarlo para aplicar un estilo a un elemento 
+especifico en las herramientas de desarrollo de chrome. 
 _________________________________
 
 
@@ -147,7 +161,8 @@ _________________________________
 
 Responsive design. Change CSS depending on device, screen size and color.
 
-If your browser width doesn't go below 400px wide, you can test the view in chrome's device emulator as described here:
+If your browser width doesn't go below 400px wide, you can test the view 
+in chrome's device emulator as described here:
 https://developer.chrome.com/devtools/docs/device-mode
 
 /*Media Querie (@media): Responsive design. Change CSS depending on device, 
@@ -169,13 +184,15 @@ _________________________________
 normalize.css
 _________________________________
 
-To normalize css in all browser. Include next css in the head as a link <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+To normalize css in all browser. Include next css in the head as a 
+link <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
 
 Imagenes de prueba antes de tener las definitivas.
 Placehold.it > deja ver las dimensiones de la imagen
 Placekitten.com
 
-Fuentes: www.google.com/fonts (http://www.google.com/fonts) > fonts on Internet. Y agregar el link  a la fuente en el head de la pagina.
+Fuentes: www.google.com/fonts (http://www.google.com/fonts) > fonts on Internet. 
+Y agregar el link  a la fuente en el head de la pagina.
 
 
 _________________________________
@@ -188,20 +205,22 @@ Foundation: http://foundation.zurb.com/
 Yaml: http://www.yaml.de/ 
 960 Grid: http://960.gs/ 
 Suzy: http://susy.oddbird.net/ 
-Frameless: http://framelessgrid.com/ (Unfortunately, it looks like Frameless is gone)
 
 _________________________________
 
-To use the Bootstrap files in your project just copy the css and js folders to your project folder. Don't forget to include the files in your head element:
+To use the Bootstrap files in your project just copy the css and js folders 
+to your project folder. Don't forget to include the files in your head element:
 
-	<link rel="stylesheet" href="css/bootstrap.min.css"> <script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css"> <script src="js/bootstrap.min.js"></script>
 
 _________________________________
 NOTE: CSS minification 
 _________________________________
 
-does not happen automatically by default, therefore if you edit your unminified CSS file, but include the minified version in your HTML, the page will not use the updated CSS by default.
+does not happen automatically by default, therefore if you edit your unminified CSS file, 
+but include the minified version in your HTML, the page will not use the updated CSS by default.
 
-You can manually minify your CSS using a site like http://cssminifier.com/.
-
-You can also use a more advanced and automated workflow where CSS files get minimized automatically, for example using a plugin for your code editor or a build system like Gruntjs (http://gruntjs.com/).
+You can manually minify your CSS using a site like http://cssminifier.com/. 
+You can also use a more advanced and automated workflow where CSS files get 
+minimized automatically, for example using a plugin for your code editor or 
+a build system like Gruntjs (http://gruntjs.com/).
